@@ -26,7 +26,7 @@ public class MendOnTheGoClient implements ClientModInitializer {
 				return;
 			}
 			// Like the original: only counts while no screen is open.
-			boolean down = client.screen == null && MEND.isDown();
+			boolean down = client.gui.screen() == null && MEND.isDown();
 			if (down != lastSent) {
 				lastSent = down;
 				ClientPlayNetworking.send(new MendHoldPayload(down));
