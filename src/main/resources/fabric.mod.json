@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "mend_on_the_go",
+	"version": "${version}",
+	"name": "Mend On The Go",
+	"description": "Hold a key (default: Left Shift) or toggle /repair to repair your held Mending item using experience points.",
+	"authors": [
+		"MCreator"
+	],
+	"contact": {
+		"homepage": "https://mcreator.net"
+	},
+	"license": "All-Rights-Reserved",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mcreator.mendonthego.MendOnTheGo"
+		],
+		"client": [
+			"net.mcreator.mendonthego.client.MendOnTheGoClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
